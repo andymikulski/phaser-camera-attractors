@@ -3,6 +3,10 @@ import MainScene from './MainScene';
 import PhysicsScene from './PhysicsScene';
 
 const game = new Phaser.Game({
+  fps: {
+    forceSetTimeOut: true,
+    target: 45,
+  },
   width: 1024,
   height: 768,
   backgroundColor: 0xA1E064,
